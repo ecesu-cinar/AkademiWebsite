@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akademi Cerrahi Tıp Merkezi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <section class="tibbi-header">
+
+        <nav>
+
+            <a href="index.html"><img src="Images/logo.png"></a>
+
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="Tıbbı Birimler.html">Tıbbı Birimler</a></li>
+                    <li><a href="Hekimler.html">Hekimler</a></li>
+                    <li><a href="Iletişim.html">İletişim</a></li>
+
+                </ul>
+
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+
+        </nav>
+
+        <h1>Tıbbı Birimler</h1>
+
+    </section>
+
+    <!-----Tıbbi Birimler kısmı------>
+
+    <section class="tibbi-foto">
+        <div>
+            <img src="Images/asıl fotoğraflar/kbb.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="tibbi-bilgi">
+
+        <h1>Kulak Burun Boğaz</h1>
+        <P>&emsp;&emsp;Kulak Burun Boğaz, baş, boyun, boğaz, kulak ve burun bölgelerini etkileyen hastalıkların tanı ve tedavisi ile ilgilenen bir cerrahi bilim dalıdır.</P>
+        <P>&emsp;&emsp;Kulak Burun Boğaz kliniğimizde, endoskopik işlemler gibi modern tanı yöntemleri kullanılmakta olup, hastalarımıza hem tıbbi hem de cerrahi tedavi uygulanmaktadır.</P>
+
+        <h2>Birim Doktorları</h2>
+        <h3><a href="Hekimler - Ahmet.html">Opr. Dr. Ahmet ÇETİN</a></h3>
+
+    </section>
+
+    <!-----Tıbbi birimler kısmının sonu------>
+    
+
+    <section class="footnote">
+
+        <h1>Hakkımızda</h1>
+        <p>Akademi Cerrahi Tıp Merkezi web sayfamız üzerinden, hastanemizde verdiğimiz hizmetlere ilişkin bilgilere ulaşabilirsiniz.</p>
+
+        <h2> Bize Ulaşın</h2>
+
+    </section>
+
+    <div class="icons">
+        
+        <a href="https://www.instagram.com/ozelakademitipmerkezi/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ozelakademitipmerkezi/"><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://twitter.com/akademitip"><i class="fa-brands fa-x-twitter"></i></a>
+
+    </div>
+    
+    <div class="editor">
+        <h4>Son Güncelleme: 19.12.2024 / Editör: Eda Ecesu ÇINAR. </h4>
+        <h4>İletişim: ecesu.cinar24@gmail.com</h4>
+    </div>
+
+
+    <!-----JavaScript for Toggle Menu??------>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function openMenu(){
+            navLinks.style.visibility = 'visible';
+        }
+
+        function hideMenu(){
+            navLinks.style.visibility = 'hidden';
+        }
+
+    </script>
+
+    <!--js code for the carousel-->
+
+    <script>
+
+        const carousel = document.querySelector(".carousel")
+
+        arrowsIcons = document.querySelectorAll(".wrapper i");
+
+        firstImg= carousel.querySelectorAll("img")[0];
+
+        let firstImgWidth = firstImg.clientWidth + 14;
+
+        arrowsIcons.forEach(icon => {
+
+            icon.addEventListener("click",()=>{
+                carousel.scrollLeft += icon.id== "left" ? -firstImgWidth : firstImgWidth ;
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akademi Cerrahi Tıp Merkezi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <section class="header">
+
+        <nav>
+
+            <a href="index.html"><img src="Images/logo.png"></a>
+
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="Tıbbı Birimler.html">Tıbbı Birimler</a></li>
+                    <li><a href="Hekimler.html">Hekimler</a></li>
+                    <li><a href="Iletişim.html">İletişim</a></li>
+
+                </ul>
+
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+
+        </nav>
+
+    <div class="text-box">
+
+        <h1> Özel Akademi Cerrahi Tıp Merkezi</h1>
+
+        <p>
+            Olmaya devlet cihanda bir nefes sıhhat gibi!
+        </p>
+
+        <a href="Iletişim.html" class=" butn"> Daha fazla bilgi için bize ulaşın </a>
+
+    </div>
+
+    </section>
+
+    <!-----Galeri----->
+
+    <section class="birimler">
+
+       <a href=""><h1>Galeri</h1></a>
+
+       <div class="wrap">
+
+            <div class="wrapper">
+
+                <i id ="left" class="fa-solid fa-arrow-left"></i>
+            
+                <div class="carousel" id="carousel">
+
+                    <img src="Images/gelri/a1.jpg" alt="img">
+                    <img src="Images/gelri/a2.jpg" alt="img">
+                    <img src="Images/gelri/3.jpg" alt="img">
+                    <img src="Images/gelri/7.jpg" alt="img">
+                    <img src="Images/gelri/2.jpg" alt="img">
+                    <img src="Images/gelri/5.jpg" alt="img">
+                    <img src="Images/gelri/a3.jpg" alt="img">
+                    <img src="Images/gelri/a7.jpg" alt="img">
+                    <img src="Images/ali_cinnar-transformed.jpeg" alt="img">
+                    <img src="Images/gelri/4.jpg" alt="img">
+                    <img src="Images/gelri/6.jpg" alt="img">
+
+                </div>
+
+                <i id="right" class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+       </div>
+
+    </section>
+
+    
+    <!-----Yazilar----->
+
+    <section class="haber">
+        
+        <h1>Doktorlarımızdan Yazılar</h1>
+
+         <div class="haber-wrap">
+            <a href="Diyabet.html"> 
+                <img src="Images\pexels-asphotograpy-1001897.jpg"> 
+
+                <h2>Diyabet Hastalığı nedir nasıl oluşur ne yapmalı? </h2>
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="bilgi">
+
+        <div class="container">
+
+
+            <div class="text">
+
+                <h1>25 yılı aşkın süredir hizmetinizdeyiz</h1>
+            
+            </div>
+
+        </div>
+       
+    </section>
+
+    <section class="footnote">
+
+        <h1>Hakkımızda</h1>
+        <p>Akademi Cerrahi Tıp Merkezi web sayfamız üzerinden, hastanemizde verdiğimiz hizmetlere ilişkin bilgilere ulaşabilirsiniz.</p>
+
+        <h2> Bize Ulaşın</h2>
+
+    </section>
+
+    <div class="icons">
+
+        <a href="https://www.instagram.com/ozelakademitipmerkezi/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ozelakademitipmerkezi/"><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://twitter.com/akademitip"><i class="fa-brands fa-x-twitter"></i></a>
+
+    </div>
+
+    <div class="editor">
+        <h4>Son Güncelleme: 19.12.2024 / Editör: Eda Ecesu ÇINAR.</h4>
+        <h4>İletişim: ecesu.cinar24@gmail.com</h4>
+    </div>
+    
+    
+
+
+    <!-----JavaScript for Toggle Menu??------>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function openMenu(){
+            navLinks.style.visibility = 'visible';
+        }
+
+        function hideMenu(){
+            navLinks.style.visibility = 'hidden';
+        }
+
+    </script>
+
+    <!--js code for the carousel-->
+
+    <script>
+
+        const carousel = document.querySelector(".carousel")
+
+        arrowsIcons = document.querySelectorAll(".wrapper i");
+
+        firstImg= carousel.querySelectorAll("img")[0];
+
+        let firstImgWidth = firstImg.clientWidth + 14;
+
+        arrowsIcons.forEach(icon => {
+
+            icon.addEventListener("click",()=>{
+                carousel.scrollLeft += icon.id== "left" ? -firstImgWidth : firstImgWidth ;
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

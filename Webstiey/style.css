@@ -1,0 +1,1017 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;   
+}
+/*---ilk kısımın arkası---*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.514),rgba(4, 9, 30, 0.514)), url("Images/asıl\ fotoğraflar/akad.jpg");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+/*-------navigation bar-------*/
+nav{
+    display: flex;
+    padding: 0.5% 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    z-index: 1000;
+}
+nav img{
+    width: 85px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 9px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #555273;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 570;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 4px;
+    background: #E23E57;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*-----ilk kısım-----*/
+.text-box{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+
+}
+.butn{
+    display: inline-block;
+    text-decoration: none;
+    color :white;
+    border:1px solid white;
+    border-radius: 100px;
+    padding:12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition:0.1s;
+}
+.butn:hover{
+    background-color: rgba(255, 228, 196, 0.116);
+}
+nav .fa-solid{
+    display: none;
+}
+
+
+.haber{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top:10px;
+}
+
+.haber h1{
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 700;
+    color:#031c6d;
+    padding:100px 50px;
+}
+
+.haber img{
+    width: 50%;
+    padding: 20px;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+
+.haber h2{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color:#031c6d;
+    
+}
+
+.haber-wrap{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 0px;
+    padding:50px;
+}
+
+
+/*---carousel----*/
+
+.birimler {
+    text-align: center;
+}
+
+.birimler h1 {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 700;
+    color: #E2EFF1;
+    background: #031c6d;
+    padding: 50px 20px; /* Reduced padding for a cleaner layout */
+    margin: 0 auto;
+    max-width: 100%; /* Ensures the heading fits in the container */
+}
+
+.wrap {
+    display: flex;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center; /* Center-aligns items vertically */
+    background: #031c6d;
+    padding: 10px; /* Added padding for breathing space */
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto; /* Centers the wrapper */
+    position: relative; /* Set to relative to fix absolute children */
+}
+
+.wrapper i {
+    position: absolute;
+    top: 50%;
+    background: #EBF4F6;
+    font-size: 1.2rem;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensures arrows appear above other elements */
+}
+
+.wrapper i:first-child {
+    left: -40px; /* Adjusted for better alignment */
+}
+
+.wrapper i:last-child {
+    right: -40px; /* Adjusted for better alignment */
+}
+
+.wrapper .carousel {
+    display: flex; /* Ensures proper alignment */
+    gap: 14px; /* Creates consistent spacing between images */
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    width: 100%; /* Makes images fill their container */
+    max-width: 340px; /* Ensures consistent image width */
+}
+
+.carousel img:first-child {
+    margin-left: 0; /* Ensures first image has no left margin */
+}
+
+.wrapper .fa-arrow-left,
+.wrapper .fa-arrow-right {
+    display: block;
+}
+
+
+/*-------Son kısım-------*/
+
+.bilgi{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #E2EFF1;
+}
+
+.container{
+    margin:100px auto;
+    width: 75%;
+}
+
+.container img{
+    float: left;
+    margin-right: 60px;
+}
+
+.text h1 {
+    font-size: 3rem; /* Default font size for larger screens */
+    color: #2b029b; /* Text color */
+    padding: 20px; /* Padding around the text */
+    text-align: center; /* Center-align text */
+    line-height: 1.3; /* Improves readability */
+    word-wrap: break-word; /* Prevents text from overflowing */
+}
+
+
+
+
+/*-----Footnote----*/
+
+.footnote{
+    background-color: #031c6d; /* daha iyi olacağı düşününlüğü taktirde imega çevirebilirim*/
+}
+
+.footnote h1{
+    font-size: 32px;
+    color: #bdc4c5;
+    font-weight:420;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.footnote p{
+    color:#bdc4c5;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footnote h2{
+    font-size: 29px;
+    color: #bdc4c5;
+    font-weight:400;
+    padding:10px;
+    text-align: center;
+}
+
+.icons {
+    background-color: #031c6d;
+    color: #bdc4c5;
+    display: block;
+    align-items: center;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.icons i {
+    margin: 0 13px;
+    padding-bottom: 20px;
+}
+
+.icons a {
+    color: inherit; 
+    text-decoration: none; 
+    transition: 0.15ms;
+}
+
+.icons a:hover{
+    color: #E23E57;
+}
+
+
+.editor{
+    background-color: #031c6d;
+    color: #bdc4c5;
+    text-align: center;
+    align-items: center;
+    font-weight: 30px;
+    font-family: Montserrat, sans-serif;
+    padding-bottom: 10px;
+}
+
+.editor h4{   
+    font-size: 18px;
+    color: #bdc4c5;
+    font-weight:400;
+    text-align: center;
+}
+
+/*----- Ana Sayfanın Sonu ----*/
+
+/*----- Hakkımızdanın(2. Sayfanın) başlangıcı -----*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.514),rgba(4, 9, 30, 0.514)), url("Images/asıl\ fotoğraflar/hakk.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#e2eff1bd;
+    
+}
+
+.sub-header h1{
+    padding-top: 20vh;
+    font-size: 42px;
+}
+
+/*------- 1. bilgi kısmı-------*/
+
+.firstpara{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstcontain{
+    margin:100px auto;
+    width: 75%;
+}
+
+.firstcontain img{
+    margin: 70px;
+    width: 700px;
+    padding-top: 50px;
+    float: left;
+    object-fit: cover;
+}
+
+.fisrtyaz h1{
+    padding-top: 120px;
+    color: #031c6d;
+    font-size: 46px;
+}
+
+.fisrtyaz p{
+    padding: 210px;
+    color: #031c6d;
+    font-size: 28px;
+}
+
+
+
+
+/*------- 2. bilgi kısmı-------*/
+
+.secondpara{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dde0e0;
+}
+
+.secondcontain {
+    margin:100px auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondcontain img{
+    margin: 40px;
+    width: 600px;
+    float: right;
+    object-fit: cover;
+    padding-right: 190px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.secondyaz{
+    padding-left: 140px;
+    padding-right: 100px;
+}
+
+.secondyaz h1{
+    color: #031c6d;
+    font-size: 46px;
+}
+
+.secondyaz p{
+    padding-top: 15px;
+    color: #031c6d;
+    font-size: 28px;
+}
+
+
+/*------- 3. bilgi kısmı-------*/
+
+.finalpara{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:100px auto;
+    width: 75%;
+}
+
+.finalcontain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finalcontain img{
+    margin: 40px;
+    width: 540px;
+    float: left;
+    object-fit: cover;
+    padding-right: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.finalyaz h1{
+    color: #031c6d;
+    font-size: 46px;
+}
+
+.finalyaz p{
+    padding-top: 15px;
+    color: #031c6d;
+    font-size: 28px;
+}
+
+
+/*----- Hakkımızda'nın Sonu -----*/
+
+/*----- Tıbbi Birimler'in Başı -----*/
+
+.tibbi-header{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.514),rgba(4, 9, 30, 0.514)), url("Images/asıl\ fotoğraflar/tıbbi.jpg");
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#e2eff1bd;
+}
+
+.tibbi-header h1{
+    padding-top: 20vh;
+    font-size: 42px;
+}
+
+.tibbi{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.tibbi .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.tibbi .col {
+    flex-basis: 28%;
+    border-radius: 10px;
+    text-align: center;
+    background-color:#eeeeee;
+    padding: 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    filter: brightness(90%);
+}
+
+.tibbi .col img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tibbi .col h2{
+    margin-top: 17px;
+    padding-top: 9px;
+    text-decoration: none;
+    color: #031c6d;
+}
+
+.tibbi .col:hover{
+    cursor: pointer;
+    filter: brightness(100%);
+
+}
+
+
+/*----- Tıbbi Birimler'in Sonu -----*/
+
+/*----- Hekimler'in Başı -----*/
+
+.hekim-header{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.514),rgba(4, 9, 30, 0.514)), url("Images/asıl\ fotoğraflar/d.jpg");
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#e2eff1bd;
+}
+
+.hekim-header h1{
+    padding-top: 20vh;
+    font-size: 42px;
+}
+
+.hekim{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hekim .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.hekim .col {
+    flex-basis: 23%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 9px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    filter: brightness(90%);
+}
+
+.hekim .col img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius:10px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hekim .col h2{
+    margin-top: 17px;
+    padding-top: 9px;
+    text-decoration: none;
+    color: #031c6d;
+}
+
+.hekim .col:hover{
+    cursor: pointer;
+    filter: brightness(100%);
+
+}
+
+
+
+
+/*----- Hekimler'in Sonu -----*/
+
+/*----- İletişim'in Başı -----*/
+
+.ilet-header{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.514),rgba(4, 9, 30, 0.514)), url("Images/asıl\ fotoğraflar/ilet.jpg");
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#e2eff1bd;
+}
+
+.ilet-header h1{
+    padding-top: 20vh;
+    font-size: 42px;
+}
+
+.ilet{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.ilet iframe{
+    width: 100%;
+}
+
+.contact{
+    width: 80%;
+    margin: auto;
+}
+
+.contact .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.contact .col {
+    flex-basis: 48%;
+    padding: 9px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    filter: brightness(90%);
+}
+
+.contact .col div{
+    display:flex;
+    align-items: center;
+    margin-bottom: 40px ;
+}
+
+.contact i{
+    font-size: 35px;
+    color:#031c6d;
+    margin:10px;
+    margin-right: 30px;
+}
+
+.contact p{
+    padding: 0;
+}
+
+.contact h5{
+    font-size: 20px;
+    margin-bottom: 5px ;
+    color: black;
+    font-weight: 450 ;
+}
+
+
+.contact i:hover{
+    color: #E23E57;
+}
+
+
+/*----- İletişim'in Sonu -----*/
+
+/*----- Hekimler ile Detaylı Biginin Başı -----*/
+
+.doc{
+    width: 80%;
+    margin: auto;
+}
+
+.doc .hepsi {
+    display: flex;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.foto{
+    text-align: center;
+}
+
+.foto img{
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+.foto h3{
+    padding-top: 10px;
+    font-size: 29px;
+    color: #031c6d;
+}
+
+.foto h4{
+    padding-top: 10px;
+    font-size: 25px;
+    color: #233264;
+}
+
+.hekim-bilgi{
+    width:100%;
+    margin-top: 100px;
+    margin-left: 5%;
+
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 6%;
+    display:block;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+.hekim-bilgi h3{
+    font-size: 35px;
+    color: #031c6d;
+
+}
+
+.hekim-bilgi h3:after{
+    content: "";
+    display: block;
+    width: 320px;
+    height: 5px;
+    background-color: #51629c;
+    border-radius: 50px;
+}
+
+.hekim-bilgi h4{
+    padding-top: 70px;
+    font-size: 30px;
+    color: #031c6d;
+    padding-left: 20px;
+}
+
+.hekim-bilgi h5{
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-bottom: 0;
+    font-size: 25px;
+    color: #233264 ;
+}
+
+
+
+/*----- Hekimler ile Detaylı Biginin Sonu -----*/
+
+/*----- Tıbbi Birimler ile Detaylı Biginin Başı -----*/
+
+.tibbi-foto{
+    width: 60%;
+    margin: auto;
+}
+
+.tibbi-foto div{
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 50px;
+}
+
+.tibbi-foto img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius:20px;
+}
+
+.tibbi-bilgi{
+    width: 55%;
+    margin:auto;
+    padding-top: 30px;
+
+}
+
+.tibbi-bilgi h1{
+    font-weight: 600;
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:#031c6d;
+}
+
+.tibbi-bilgi p{
+    font-weight: 550;
+    font-size: 25px;
+    padding-bottom: 40px;
+    color: #233264;
+}
+
+.tibbi-bilgi h2{
+    font-weight: 600;
+    font-size: 35px;
+    padding-bottom: 20px;
+    color:#031c6d;
+    padding-left: 30px;
+}
+
+.tibbi-bilgi h3{
+    font-weight: 550;
+    font-size: 25px;
+    padding-bottom: 40px;
+    color: #233264;
+    padding-left: 60px;
+    padding-bottom: 50px;
+}
+
+.tibbi-bilgi a:hover{
+    transition:0.1s;
+    background-color: transparent;
+    color: #233264;
+}
+
+.tibbi-bilgi a:hover{
+    color:#E23E57;
+}
+
+/*----- Tıbbi Birimler ile Detaylı Biginin Sonu -----*/
+
+.diyabetpar{
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+}
+
+.diyabetpar p{
+    font-weight: 550;
+    font-size: 25px;
+    padding:30px;
+    color: #233264;
+}
+
+
+.doc p{
+    font-weight: 550;
+    font-size: 25px;
+    padding:30px;
+    color: #233264;
+}
+
+@media screen and (max-width: 839px) {
+    /* General Adjustments */
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Navigation */
+    nav img {
+        width: 60px;
+    }
+    .nav-links {
+        position: absolute;
+        background: #E2EFF1;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .nav-links ul {
+        display: block;
+    }
+    .nav-links ul li {
+        display: block;
+        margin-top: 20px;
+    }
+    .nav-links ul li a {
+        font-size: 16px;
+        font-weight: 550;
+        padding: 10px 15px;
+    }
+
+    /* Header Text */
+    .text-box {
+        padding: 20px;
+        text-align: center;
+    }
+    .text-box h1 {
+        font-size: 28px;
+    }
+    .text-box p {
+        font-size: 18px;
+    }
+
+    /* Carousel */
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+    .wrapper i {
+        display: block;
+        font-size: 24px;
+    }
+
+    /* Content Sections */
+    .container img,
+    .firstcontain img,
+    .secondcontain img,
+    .finalcontain img {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .fisrtyaz p,
+    .secondyaz p,
+    .finalyaz p {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    /* Cards (Tıbbi and Hekimler) */
+    .tibbi .row,
+    .hekim .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tibbi .col,
+    .hekim .col {
+        margin: 20px 0;
+    }
+
+    .tibbi .col img,
+    .hekim .col img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contact Section */
+    .contact .row {
+        flex-direction: column;
+    }
+    .contact .col {
+        width: 100%;
+        text-align: center;
+    }
+    .contact i {
+        font-size: 30px;
+    }
+    .contact h5 {
+        font-size: 16px;
+    }
+    .contact p {
+        font-size: 14px;
+    }
+
+    /* Detailed Sections */
+    .hekim-bilgi,
+    .tibbi-bilgi {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hekim-bilgi h3,
+    .tibbi-bilgi h1 {
+        font-size: 28px;
+    }
+    .hekim-bilgi h4,
+    .tibbi-bilgi h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .hekim-bilgi h5,
+    .tibbi-bilgi h3 {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footnote h1,
+    .footnote p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .icons {
+        font-size: 24px;
+    }
+
+    .editor {
+        text-align: center; /* Center-align text */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .editor h4 {
+        font-size: 14px; /* Reduce font size for readability */
+        line-height: 1.5; /* Adjust line height for better spacing */
+        margin-bottom: 10px; /* Add spacing between the lines */
+    }
+
+}
