@@ -13,5 +13,6 @@ After reviewing the project, I’ve noticed many mistakes and areas for improvem
 ### Why This Project?
 As a beginner, I wanted to dive into web development, experiment with layouts, styles, and media queries, and learn how to make websites functional and visually appealing. This repository reflects my progress and the things I've learned along the way.
 
-### Feedback & Contributions:
-Feel free to share feedback or suggestions to help me improve further. Every bit of advice helps me grow! 😊
+### Thoughts of my future self:
+Bro this sucks who coded this ew
+
